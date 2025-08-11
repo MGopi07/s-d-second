@@ -1,0 +1,19 @@
+:root {
+  /* --primary-color: #042a2d; */
+  --primary-color:#042a2d;
+  /* --secondary-color: #f2f1ed; */
+  --secondary-color: #ffffff;
+  --text-color: #8f8f8f;
+  /* --accent-color			: #73ED7C;
+	--dark-color		    : #019297; */
+  --dark-color: #555e61;
+  --accent-color: #f7941d;
+  --white-color: #ffffff;
+  --divider-color: #dfe1de;
+  --dark-divider-color: #ffffff33;
+  --error-color: rgb(230, 87, 87);
+  --default-font: "Fustat", sans-serif;
+}
+
+/* ----linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%)--- */
+ /* linear-gradient(to right,#042a2d 0%,#f7941d 50%,#042a2d 100%); */
