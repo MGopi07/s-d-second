@@ -56,6 +56,7 @@
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Fustat", sans-serif;
 } */
+/* Manrope,sans-serif */
 
 :root {
   --primary-color: #2c3e50; /* Warm brand orange */
@@ -577,7 +578,8 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .main-menu ul li a {
   font-size: 16px;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: 600;
   padding: 15px !important;
   color: var(--white-color);
   text-transform: capitalize;
@@ -1299,7 +1301,25 @@ header.main-header .header-sticky.active .container-fluid::before {
 .service-item {
   width: calc(50% - 15px);
 }
+/*-*/
+.service-item {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass edge */
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px;
+  color: #fff; /* For better contrast */
+  /* Smooth movement */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
+.service-item:hover {
+  transform: translateY(-8px); /* Moves upward */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+/*------------------*/
 .service-item .icon-box {
   background-image: linear-gradient(
     to right,
@@ -1844,6 +1864,24 @@ header.main-header .header-sticky.active .container-fluid::before {
   height: calc(100% - 30px);
   margin-bottom: 30px;
 }
+/*---------------*/
+.how-work-item {
+  background: rgba(255, 255, 255, 0.15); /* Transparent layer */
+  backdrop-filter: blur(12px); /* Frosted glass blur */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Soft edge border */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle depth */
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.how-work-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Stronger hover shadow */
+}
+
+/*----------------*/
 
 .how-work-item .icon-box {
   background-image: linear-gradient(
@@ -1985,6 +2023,25 @@ header.main-header .header-sticky.active .container-fluid::before {
 .company-growth-item {
   width: calc(25% - 22.5px);
 }
+/*----------------*/
+.company-growth-item {
+  background: rgba(255, 255, 255, 0.15); /* Transparent layer */
+  backdrop-filter: blur(12px); /* Frosted glass blur */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Soft border */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+  padding: 20px;
+  /* color: #fff; */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.company-growth-item:hover {
+  transform: translateY(-8px); /* Smooth upward movement */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/*----------------*/
 
 .company-growth-item h2 {
   font-size: 40px;
@@ -2450,7 +2507,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   width: 100%;
   max-width: 600px;
 }
-
+/* 
 .about-footer .section-title h2 {
   color: var(--white-color);
 }
@@ -2470,7 +2527,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .footer-contact-info p span {
   font-size: 20px;
   font-weight: 600;
-}
+} */
 
 .footer-social-links {
   margin-top: 30px;
@@ -2522,7 +2579,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+/* 
 .footer-copyright {
   border-top: 1px solid var(--dark-divider-color);
   padding: 40px 0;
@@ -2562,7 +2619,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .footer-copyright-text p {
   color: var(--white-color);
   margin: 0;
-}
+} */
 
 /************************************/
 /***     17. About Us Page css    ***/
@@ -4581,7 +4638,8 @@ header.main-header .header-sticky.active .container-fluid::before {
   }
 
   .navbar {
-    padding: 20px 0 0;
+    /* padding: 20px 0 0; */
+    padding: 10px 0 10px 0;
   }
 
   header.main-header .header-sticky.active .navbar {
@@ -6205,3 +6263,102 @@ header.main-header .header-sticky.active .container-fluid::before {
     margin-top: 10px;
   }
 }
+
+/*-----------*/
+/* Headings in footer */
+.about-footer h2,
+.quick-links {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* About text */
+.about-footer p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Quick links styling */
+.quick-links-items li {
+  margin-bottom: 6px;
+}
+.quick-links-items li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, 
+  padding-left 0.3s ease;
+}
+
+.quick-links-items li a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+/* Contact info */
+.footer-contact-info h3 {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.footer-contact-info p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #ddd;
+}
+.footer-contact-info strong {
+  color: #fff;
+  font-weight: 600;
+}
+.footer-contact-info a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-contact-info a:hover {
+  color: #ffb400;
+}
+
+/* Social icons */
+.footer-social-links ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-social-links ul li {
+  margin-right: 10px;
+}
+.footer-social-links ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.footer-social-links ul li a i {
+  font-size: 16px;
+  color: #fff;
+}
+.footer-social-links ul li a:hover {
+  background: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #ccc;
+}
+.footer-bottom a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*-----------------*/
+
