@@ -1,9 +1,4 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Infine - Life and Business Coach HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
+
 /* INDEX
 ----------------------------------------------------------------------------------------
 01. Global Variables
@@ -68,7 +63,9 @@
   --divider-color: #e0e0e0; /* Light divider */
   --dark-divider-color: #ffffff33;
   --error-color: #e65757; /* Clear but not too harsh red */
-  --default-font: "Fustat", sans-serif;
+  /* --default-font: "Fustat", sans-serif; */
+  --default-font: "Manrope", sans-serif;
+
 }
 
 /************************************/
