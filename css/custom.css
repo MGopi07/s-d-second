@@ -2063,7 +2063,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 .our-faqs {
   padding: 100px 0;
 }
-
+.our-faqs {
+  background: var(--white-color);
+  padding: 100px 0;
+}
 .faqs-cta-box {
   display: inline-block;
   background-color: var(--white-color);
