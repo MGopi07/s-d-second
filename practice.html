@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* ===== Common Styles ===== */
+        .features h2,
+        .features-cards h4,
+        .features-2 h3 {
+            font-weight: 700;
+        }
+
+        .features p,
+        .features-cards p,
+        .features-2 p {
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        /* ===== Features Tabs ===== */
+        .features .nav-tabs {
+            border-bottom: none;
+            gap: 15px;
+        }
+
+        .features .nav-tabs .nav-link {
+            border: none;
+            padding: 12px 24px;
+            background: #f1f5f9;
+            border-radius: 30px;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .features .nav-tabs .nav-link.active {
+            background: var(--primary-color, #007bff);
+            color: #fff;
+        }
+
+        .features .nav-tabs .nav-link:hover {
+            background: var(--primary-color, #007bff);
+            color: #fff;
+        }
+
+        /* ===== Features Tab Content ===== */
+        .features ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .features ul li {
+            display: flex;
+            align-items: start;
+            gap: 8px;
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .features ul li i {
+            color: var(--primary-color, #007bff);
+            font-size: 1.2rem;
+        }
+
+        /* ===== Features Cards ===== */
+        .features-cards .feature-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .features-cards .feature-box i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .features-cards .feature-box.orange {
+            background-color: #fff3e2;
+        }
+
+        .features-cards .feature-box.blue {
+            background-color: #deedfd;
+        }
+
+        .features-cards .feature-box.green {
+            background-color: #d5f1e4;
+        }
+
+        .features-cards .feature-box.red {
+            background-color: #fdeded;
+        }
+
+        .features-cards .feature-box {
+            height: 100%;
+            padding: 40px 30px;
+            border-radius: 10px;
+        }
+
+        .features-cards .feature-box.orange i {
+            color: #ff6f3c !important;
+        }
+
+        .features-cards .feature-box.blue i {
+            color: #007bff;
+        }
+
+        .features-cards .feature-box.green i {
+            color: #28a745;
+        }
+
+        .features-cards .feature-box.red i {
+            color: #dc3545;
+        }
+
+        .features-cards .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== Features-2 Section ===== */
+        .features-2 .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .features-2 .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-2 .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color, #007bff);
+        }
+
+        .features-2 .phone-mockup img {
+            max-width: 250px;
+            margin: auto;
+            display: block;
+        }
+
+        /* ===== Responsive Fixes ===== */
+        @media (max-width: 767px) {
+            .features .nav-tabs {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .features-2 .feature-item {
+                text-align: center !important;
+            }
+
+            .features-2 .feature-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <section id="features" class="features section">
+
+        <!-- Section Title -->
+        <div class="container section-title wow fadeInUp" data-wow-delay="0.1s">
+            <h2>Features</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+        <div class="container">
+
+            <div class="d-flex justify-content-center">
+
+                <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="0.2s" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1"
+                            aria-selected="true" role="tab">
+                            <h4>Modisit</h4>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false"
+                            role="tab">
+                            <h4>Praesenti</h4>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false"
+                            role="tab">
+                            <h4>Explica</h4>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="tab-content wow fadeInUp" data-wow-delay="0.3s">
+
+                <!-- Tab 1 -->
+                <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center wow fadeInLeft"
+                            data-wow-delay="0.4s">
+                            <h3>Voluptatem dignissimos provident</h3>
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center wow fadeInRight" data-wow-delay="0.5s">
+                            <img src="./images/other/features-illustration-1.webp" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center wow fadeInLeft"
+                            data-wow-delay="0.4s">
+                            <h3>Neque exercitationem debitis</h3>
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores
+                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center wow fadeInRight" data-wow-delay="0.5s">
+                            <img src="./images/other/features-illustration-2.webp" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center wow fadeInLeft"
+                            data-wow-delay="0.4s">
+                            <h3>Voluptatibus commodi accusamu</h3>
+                            <ul>
+                                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</span></li>
+                                <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores
+                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                            </ul>
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center wow fadeInRight" data-wow-delay="0.5s">
+                            <img src="./images/other/features-illustration-3.webp" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="features-cards" class="features-cards section py-5">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="feature-box orange h-100">
+                        <i class="bi bi-award"></i>
+                        <h4>Corporis voluptates</h4>
+                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    </div>
+                </div><!-- End Feature Borx-->
+
+                <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-box blue h-100">
+                        <i class="bi bi-patch-check"></i>
+                        <h4>Explicabo consectetur</h4>
+                        <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                    </div>
+                </div><!-- End Feature Borx-->
+
+                <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay="0.35s" >
+                    <div class="feature-box green h-100">
+                        <i class="bi bi-sunrise"></i>
+                        <h4>Ullamco laboris</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    </div>
+                </div><!-- End Feature Borx-->
+
+                <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-box red h-100">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Labore consequatur</h4>
+                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                </div><!-- End Feature Borx-->
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="features-2" class="features-2 section py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-4">
+
+                    <div class="feature-item text-end mb-5 wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="d-flex align-items-center justify-content-end gap-4">
+                            <div class="feature-content">
+                                <h3>Use On Any Device</h3>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae; In ac dui quis mi consectetuer lacinia.</p>
+                            </div>
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-display"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item text-end mb-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center justify-content-end gap-4">
+                            <div class="feature-content">
+                                <h3>Feather Icons</h3>
+                                <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien
+                                    arcu sed augue aliquam erat volutpat.</p>
+                            </div>
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-feather"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item text-end wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="d-flex align-items-center justify-content-end gap-4">
+                            <div class="feature-content">
+                                <h3>Retina Ready</h3>
+                                <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla
+                                    purus sit amet fermentum aenean commodo.</p>
+                            </div>
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.35s">
+                    <div class="phone-mockup text-center">
+                        <img src="./images/other/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="feature-item mb-5 wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>W3c Valid Code</h3>
+                                <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci
+                                    eget eros faucibus tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item mb-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Fully Responsive</h3>
+                                <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet
+                                    adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="bi bi-browser-chrome"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Browser Compatibility</h3>
+                                <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus
+                                    elementum semper nisi aenean vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script src="../assets/js/theme-panel.js"></script>
+</body>
+
+</html>
