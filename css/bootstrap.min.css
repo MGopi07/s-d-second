@@ -3906,7 +3906,8 @@ fieldset:disabled .btn {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   /* color: var(--bs-navbar-active-color); */
-  color: #f28c28;
+  /* color: #f28c28; */
+  color:  #d52c2c;
 }
 .navbar-nav .dropdown-menu {
   position: static;

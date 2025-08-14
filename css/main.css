@@ -6,11 +6,11 @@
 /* Manrope,sans-serif */
 
 :root {
-  --primary-color: #2c3e50; /* Warm brand orange */
+  --primary-color: #121212; /* Warm brand orange */
   --secondary-color: #f7f7f7; /* Soft light gray background */
   --text-color: #333333; /* Friendly, readable dark gray */
-  --accent-color: #f28c28; /* Calm teal accent for highlights */
-  --dark-color: #2a6f77; /* Rich teal-blue*/
+  --accent-color: #d52c2c; /* Calm teal accent for highlights */
+  --dark-color: #990000; /* Rich teal-blue*/
   --white-color: #ffffff; /* White */
   --divider-color: #e0e0e0; /* Light divider */
   --dark-divider-color: #ffffff33;
@@ -18,6 +18,7 @@
   /* --default-font: "Fustat", sans-serif; */
   --default-font: "Manrope", sans-serif;
 }
+
 
 /************************************/
 /*** 	   02. General css		  ***/

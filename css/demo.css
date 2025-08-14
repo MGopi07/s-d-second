@@ -17,3 +17,31 @@
 
 /* ----linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%)--- */
  /* linear-gradient(to right,#042a2d 0%,#f7941d 50%,#042a2d 100%); */
+
+ :root {
+  --primary-color: #2c3e50; /* Warm brand orange */
+  --secondary-color: #f7f7f7; /* Soft light gray background */
+  --text-color: #333333; /* Friendly, readable dark gray */
+  --accent-color: #f28c28; /* Calm teal accent for highlights */
+  --dark-color: #2a6f77; /* Rich teal-blue*/
+  --white-color: #ffffff; /* White */
+  --divider-color: #e0e0e0; /* Light divider */
+  --dark-divider-color: #ffffff33;
+  --error-color: #e65757; /* Clear but not too harsh red */
+  /* --default-font: "Fustat", sans-serif; */
+  --default-font: "Manrope", sans-serif;
+}
+
+:root {
+  --primary-color: #cc0000; /* CNN Red - strong brand primary */
+  --secondary-color: #f7f7f7; /* Soft light gray background */
+  --text-color: #333333; /* Readable dark gray for content */
+  --accent-color: #d52c2c; /* Slightly lighter red for accents */
+  --dark-color: #cb0000; /* Deep red for emphasis */
+  --white-color: #ffffff; /* White */
+  --divider-color: #e0e0e0; /* Light divider */
+  --dark-divider-color: #ffffff33; /* Semi-transparent white */
+  --error-color: #e65757; /* Clear but not too harsh red */
+  /* --default-font: "Fustat", sans-serif; */
+  --default-font: "Manrope", sans-serif;
+}
