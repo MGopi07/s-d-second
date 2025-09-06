@@ -1,4 +1,3 @@
-
 /************************************/
 /*** 	 01. Global Variables	  ***/
 /************************************/
@@ -18,7 +17,6 @@
   /* --default-font: "Fustat", sans-serif; */
   --default-font: "Manrope", sans-serif;
 }
-
 
 /************************************/
 /*** 	   02. General css		  ***/
@@ -361,7 +359,7 @@ body {
 
 .section-title h2 {
   /* font-size: 50px; */
-  font-size: 46px;
+  font-size: 42px;
   /* font-weight: 300; */
   font-weight: 600;
   line-height: 1.1em;
@@ -819,7 +817,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   height: 100%;
   z-index: 1;
 }
-
+/* 
 .hero.hero-video .hero-bg-video {
   position: absolute;
   top: 0;
@@ -834,7 +832,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .hero.hero-slider-layout {
   background: none;
@@ -935,7 +933,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .hero-btn .btn-default.btn-highlighted {
   margin-left: 40px;
 }
-
+/* 
 .export-coaching-box {
   display: flex;
   flex-wrap: wrap;
@@ -981,7 +979,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .export-coaching-step .icon-box img {
   max-width: 30px;
-}
+} */
 
 /* .export-coaching-step-content p{
 	color: var(--white-color);
@@ -1933,7 +1931,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***    12. Company Growth Css    ***/
+/***    Company Growth Css    ***/
 /************************************/
 
 .company-growth {
@@ -2011,7 +2009,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***       13. Our FAQs Css       ***/
+/***       Our FAQs Css       ***/
 /************************************/
 
 .our-faqs {
@@ -2101,7 +2099,8 @@ header.main-header .header-sticky.active .container-fluid::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../images/icon-plus.svg") no-repeat;
+  /* background: url("../images/icon-plus.svg") no-repeat; */
+  background: url("../images/icons/plus.png") no-repeat;
   background-position: center center;
   background-size: cover;
   width: 20px;
@@ -2128,7 +2127,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***    14. Our Testimonial Css   ***/
+/***    Our Testimonial Css   ***/
 /************************************/
 
 .our-testimonial {
@@ -2349,7 +2348,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 } */
 
 /************************************/
-/***       15. Our Blog Css       ***/
+/***       Our Blog Css       ***/
 /************************************/
 
 .our-blog {
@@ -2425,7 +2424,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***        16. Footer Css        ***/
+/***        Footer Css        ***/
 /************************************/
 
 .main-footer {
@@ -2461,7 +2460,6 @@ header.main-header .header-sticky.active .container-fluid::before {
   width: 100%;
   max-width: 600px;
 }
-
 
 .footer-social-links {
   margin-top: 30px;
@@ -2521,11 +2519,13 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .page-header {
   position: relative;
-  background: url("../images/page-header-bg.jpg") no-repeat;
+  /* background: url("../images/page-header-bg.jpg") no-repeat; */
+  background: url("../images/breadcrumb/breadcrumb.jpg");
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  padding: 250px 0 140px;
+  /* padding: 250px 0 140px; */
+  padding: 150px 0 140px;
   margin-top: -120px;
 }
 
@@ -2553,10 +2553,17 @@ header.main-header .header-sticky.active .container-fluid::before {
   padding: 0 30px;
   z-index: 1;
 }
-
+.page-header-content {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .page-header-box h1 {
   color: var(--white-color);
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 40px;
   font-weight: 300;
   line-height: 1.1em;
   margin-bottom: 10px;
@@ -3363,7 +3370,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/*** 	 20. Blog Archive Css	  ***/
+/*** 	 Blog Archive Css	  ***/
 /************************************/
 
 .page-blog {
@@ -3487,7 +3494,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***      21. Blog Single css	  ***/
+/***      Blog Single css	  ***/
 /************************************/
 
 .page-single-post {
@@ -3731,7 +3738,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/*** 	  22. Team Page Css	      ***/
+/*** 	  Team Page Css	      ***/
 /************************************/
 
 .page-team {
@@ -3739,7 +3746,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/*** 	 23. Team Single Css	  ***/
+/*** 	 Team Single Css	  ***/
 /************************************/
 /* 
 .page-team-single {
@@ -3884,7 +3891,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 } */
 
 /************************************/
-/*** 	 24. Pricing Page css	  ***/
+/*** 	 Pricing Page css	  ***/
 /************************************/
 
 .page-pricing {
@@ -3941,7 +3948,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 } */
 
 /************************************/
-/***   25. Testimonial Page Css	  ***/
+/***   Testimonial Page Css	  ***/
 /************************************/
 
 .page-testimonial {
@@ -4124,7 +4131,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 } */
 
 /************************************/
-/***       28. FAQs Page css      ***/
+/***       FAQs Page css      ***/
 /************************************/
 
 .page-faq {
@@ -4138,7 +4145,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /************************************/
-/***    29. Contact Us Page css   ***/
+/***    Contact Us Page css   ***/
 /************************************/
 
 .page-contact-us {
@@ -4285,7 +4292,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 /*************************************/
 /*** 30. Book Appointment Page css ***/
 /*************************************/
-
+/* 
 .page-book-appointment {
   padding: 100px 0;
 }
@@ -4355,12 +4362,12 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .appointment-form form .btn-default::before {
   display: none;
-}
+} */
 
 /************************************/
-/*** 	   31. 404 Page css       ***/
+/*** 	  404 Page css       ***/
 /************************************/
-
+/* 
 .error-page {
   padding: 100px 0;
 }
@@ -4380,10 +4387,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .error-page-content-body p {
   margin-bottom: 30px;
-}
+} */
 
 /************************************/
-/***       32. Responsive Css     ***/
+/***       Responsive Css     ***/
 /************************************/
 
 @media only screen and (max-width: 1800px) {
@@ -4418,9 +4425,9 @@ header.main-header .header-sticky.active .container-fluid::before {
     margin: 0 0 0 45px;
   }
 
-  .export-coaching-step {
+  /* .export-coaching-step {
     padding-right: 80px;
-  }
+  } */
 
   .page-header-box {
     max-width: 100%;
@@ -4432,9 +4439,9 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 @media only screen and (max-width: 1366px) {
-  .export-coaching-step {
+  /* .export-coaching-step {
     padding-right: 50px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -4454,9 +4461,9 @@ header.main-header .header-sticky.active .container-fluid::before {
     padding: 350px 0px 100px;
   }
 
-  .export-coaching-step {
+  /* .export-coaching-step {
     padding-right: 20px;
-  }
+  } */
 
   .page-header-box {
     padding: 0;
@@ -4553,9 +4560,9 @@ header.main-header .header-sticky.active .container-fluid::before {
     font-size: 16px;
   }
 
-  .export-coaching-box {
+  /* .export-coaching-box {
     margin-top: 40px;
-  }
+  } */
 
   /* .export-coaching-step-content p{
 		font-size: 15px;
@@ -4801,9 +4808,9 @@ header.main-header .header-sticky.active .container-fluid::before {
     padding: 50px 0;
   }
 
-  .our-faqs-content {
+  /* .our-faqs-content {
     margin-bottom: 30px;
-  }
+  } */
 
   .faqs-cta-content h3 {
     font-size: 20px;
@@ -5387,7 +5394,7 @@ header.main-header .header-sticky.active .container-fluid::before {
     height: 450px;
   }
 
-  .page-book-appointment {
+  /* .page-book-appointment {
     padding: 50px 0;
   }
 
@@ -5413,8 +5420,8 @@ header.main-header .header-sticky.active .container-fluid::before {
 
   .appointment-form p {
     margin-bottom: 30px;
-  }
-
+  } */
+  /* 
   .error-page {
     padding: 50px 0;
   }
@@ -5429,7 +5436,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
   .error-page-content-body p {
     margin-bottom: 20px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -5483,10 +5490,10 @@ header.main-header .header-sticky.active .container-fluid::before {
     margin: 0px;
   }
 
-  .export-coaching-box {
+  /* .export-coaching-box {
     display: none;
-  }
-
+  } */
+  /* 
   .export-coaching-step {
     width: 100%;
     padding: 0;
@@ -5503,7 +5510,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   .export-coaching-step .icon-box {
     margin-right: 20px;
     margin-bottom: 0;
-  }
+  } */
 
   /* .export-coaching-step-content{
 		width: calc(100% - 50px);
@@ -6081,7 +6088,7 @@ header.main-header .header-sticky.active .container-fluid::before {
     font-size: 18px;
   }
 
-  .appointment-form {
+  /* .appointment-form {
     padding: 20px;
   }
 
@@ -6092,7 +6099,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   .appointment-form form .btn-default {
     padding: 15px;
     margin-top: 10px;
-  }
+  } */
 }
 
 /*-----------*/
@@ -6346,4 +6353,42 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 .cta-image:hover {
   transform: scale(1.05);
+}
+
+/*--------------*/
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+.service-list li i {
+  color: #d52c2c; 
+  margin-right: 8px;
+}
+.benefits-list {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  margin-top: 15px !important;
+}
+.benefits-list li, .needs-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #444;
+ 
+}
+
+.benefits-list li i, .needs-list li i {
+  color: #d52c2c;
+  margin-right: 10px;
+  font-size: 18px;
 }
