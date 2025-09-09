@@ -6458,7 +6458,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-left: 4px solid #d52c2c;
 }
-.timeline-content h4{
+.timeline-content h4 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 20px;
@@ -6495,4 +6495,187 @@ header.main-header .header-sticky.active .container-fluid::before {
     left: 0%;
     text-align: left;
   }
+}
+/*-------company formation------*/
+/* Formation Header */
+.formation-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formation-header h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: #08123a;
+  font-size: clamp(1.75rem, 2vw + 1rem, 2.25rem); /* responsive font */
+  line-height: 1.25;
+}
+
+.formation-header p.lead {
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Service Cards */
+.fh-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.05));
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fh-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Animated gradient border effect (subtle) */
+.fh-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(29,78,216,0.15), rgba(16,185,129,0.15), rgba(234,88,12,0.15));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fh-card:hover::before {
+  opacity: 1;
+}
+
+/* Badge */
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.03);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Titles & Descriptions */
+.card-title {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #071041;
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+
+/* Benefit List */
+.benefit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.benefit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.93rem;
+  color: #0b1730;
+  line-height: 1.4;
+}
+
+.benefit-list li i {
+  color: var(--accent, #16a34a);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* Footer */
+.card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.price-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Small Note */
+.small-note {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.text-red{
+  color: #d52c2c;
+}
+/* Responsive Tweaks */
+@media (max-width: 991.98px) {
+  .formation-header h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .formation-header {
+    padding: 2rem 1rem;
+  }
+  .card-title {
+    font-size: 1.05rem;
+  }
+}
+
+/*-------Why Choose Us------*/
+ .why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.why-choose-list li {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
