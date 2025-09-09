@@ -6581,14 +6581,6 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 /* Titles & Descriptions */
-.card-title {
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #071041;
-}
-
 .card-desc {
   color: var(--muted);
   font-size: 0.95rem;
@@ -6621,47 +6613,21 @@ header.main-header .header-sticky.active .container-fluid::before {
   margin-top: 0.2rem;
 }
 
-/* Footer */
-.card-footer {
-  margin-top: auto;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
-
-.price-note {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-/* Small Note */
-.small-note {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #444;
-  background: #f9fafb;
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-}
 .text-red{
   color: #d52c2c;
 }
 /* Responsive Tweaks */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .formation-header h2 {
     font-size: 1.75rem;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .formation-header {
     padding: 2rem 1rem;
   }
-  .card-title {
-    font-size: 1.05rem;
-  }
+ 
 }
 
 /*-------Why Choose Us------*/
@@ -6679,3 +6645,44 @@ header.main-header .header-sticky.active .container-fluid::before {
   align-items: center;
   gap: 8px;
 }
+
+/*-------------*/
+ /* Custom Image Box Style */
+  .image-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px;
+    max-height: 420px; 
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Decorative corner effect */
+  .image-box::before,
+  .image-box::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #d52c2c; /* blue border */
+  }
+
+  .image-box::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .image-box::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+  }
