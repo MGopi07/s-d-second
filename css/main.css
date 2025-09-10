@@ -3380,6 +3380,9 @@ header.main-header .header-sticky.active .container-fluid::before {
 .post-item {
   height: calc(100% - 40px);
   margin-bottom: 40px;
+  border: 1px solid var(--divider-color);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .post-featured-image {
@@ -3391,7 +3394,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .post-featured-image figure a {
   display: block;
-  cursor: none;
+  cursor: pointer;
 }
 
 .post-featured-image figure img {
@@ -3404,6 +3407,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .post-item:hover .post-featured-image figure img {
   transform: scale(1.1);
+  cursor: pointer !important;
 }
 
 .post-btn {
@@ -3491,6 +3495,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .page-pagination ul li.active a,
 .page-pagination ul li a:hover {
   background: var(--accent-color);
+  color: white;
 }
 
 /************************************/
@@ -3735,6 +3740,73 @@ header.main-header .header-sticky.active .container-fluid::before {
 .post-social-sharing ul li a i {
   font-size: 18px;
   color: inherit;
+}
+
+/* === Sidebar === */
+.sidebar-contents {
+  font-size: 0.95rem;
+}
+.sidebar-widget {
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+.sidebar-widget h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Search Bar */
+.blog-widget-search input {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+.blog-widget-search button {
+  border: none;
+  background: #0d6efd;
+  color: #fff;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+.blog-widget-search button:hover {
+  background: #084298;
+}
+
+/* Categories */
+.category li {
+  margin-bottom: 0.6rem;
+}
+.category li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.category li a:hover {
+  background: #f1f1f1;
+  color: #0d6efd;
+}
+
+/* Recent Posts */
+.sidebar-widget ul li {
+  margin-bottom: 0.6rem;
+}
+.sidebar-widget ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease;
+}
+.sidebar-widget ul li a:hover {
+  color: #0d6efd;
+  padding-left: 4px;
 }
 
 /************************************/
