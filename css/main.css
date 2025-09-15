@@ -4511,7 +4511,7 @@ textarea.form-control {
 }
 
 /* Submit Button */
-.btn-default {
+/* .btn-default {
   display: inline-block;
   padding: 14px 32px;
   border-radius: 50px;
@@ -4522,13 +4522,13 @@ textarea.form-control {
   text-transform: uppercase;
   border: none;
   transition: 0.3s;
-}
+} */
 
-.btn-default:hover {
+/* .btn-default:hover {
   background: #b52424;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(213, 44, 44, 0.3);
-}
+} */
 
 /*************************************/
 /*** 30. Book Appointment Page css ***/
